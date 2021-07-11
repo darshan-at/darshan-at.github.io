@@ -1,0 +1,94 @@
+body{
+    text-align: center;    
+    color: white;
+    font-family: 'Cairo', sans-serif;
+}
+a:link{
+    text-decoration: none;
+}
+
+/* Media Query */
+@media (max-width: 640px) {
+    .name{
+        font-size: 2.5rem;
+    }
+    
+}
+/* Home Page */
+#home-page{
+    background: linear-gradient(39.97deg,#03d6f3 .79%,#458ff6 79.29%);
+    min-height: 100vh;
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-family: 'Courgette', cursive;
+}
+.nav-item{
+    margin: 1rem;
+    font-weight: 500;
+}
+.nav-link{
+    font-size: 1.1rem;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+} 
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:#458ff6;
+    background-color: white; 
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+    padding:0.5rem 1rem;
+}
+.content{
+    margin-top: 10rem;
+}
+.name{
+    letter-spacing: 0.8rem;
+    font-size: 4rem;
+}
+.content-btn-1{
+    background-color: white;
+    color: #112d57;
+    box-shadow: 0 4px 31px rgb(0 0 0 / 15%);
+    margin: 2rem;
+    padding: 0.5rem 3.5rem;
+    border-radius: 39px;
+    font-weight: 600;
+}
+.content-btn-2{
+    border: 1px solid #fff;
+    color: #fff;
+    margin: 2rem;
+    padding: 0.5rem 3.5rem;
+    box-shadow: 0 4px 31px rgb(0 0 0 / 15%);
+    border-radius: 39px;
+    font-weight: 600;
+}
+.content-btn-1:hover{
+    box-shadow: 0 10px 50px rgb(0 0 0 / 50%);
+}
+.content-btn-2:hover{
+    color: white;
+    box-shadow: 0 4px 31px rgb(0 0 0 / 50%);
+}
+.btn-text{
+    margin: 0;
+}
+.content-btn:hover{
+    background-color: #458ff6;
+}
+.typewrite{
+    font-size: 2rem;
+    color: white;
+    padding-top: 0.7rem;
+    cursor: text;
+}
+.typewrite:hover{
+    color: white;
+}
+
+/* About Page */
+#about-page{
+    background-color: turquoise;
+}
