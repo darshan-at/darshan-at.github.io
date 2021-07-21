@@ -1,27 +1,64 @@
+*{
+    scroll-behavior: smooth;
+}
 body{
-    text-align: center;    
+    text-align: center;
     color: white;
     font-family: 'Cairo', sans-serif;
 }
-a:link{
+a{
+    color: black;
+}
+a:hover{
     text-decoration: none;
 }
-
+.home-sticky{
+    position: fixed;
+    right: 1%;
+    top:85%;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: #112d57;
+    padding:10px;
+    background-color: white;
+    z-index: 1001;
+}
+.home-sticky:hover{
+    box-shadow: 0 10px 50px rgb(0 0 0 / 50%);
+   
+}
+.home-sticky i{
+    margin: 0;
+}
 /* Media Query */
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
     .name{
         font-size: 2.5rem;
     }
-    
-}
+
+} */
 /* Home Page */
 #home-page{
-    background: linear-gradient(39.97deg,#03d6f3 .79%,#458ff6 79.29%);
-    min-height: 100vh;
+    background: linear-gradient(117deg,#03d6f3 .79%,#2ae5ff .59%,#458ff6 79.29%);
+    /*background-image: url('../images/20191208_125316.jpg');*/
+    
+    animation: gradient 7s ease-in-out infinite;
+    background-size: 400% 400%;
+    padding-bottom: 14rem;
+    /*background-position: center;
+    background-size: cover;*/
+}
+
+.navbar{
+    background: linear-gradient(29.97deg,#458ff6 0.79% ,rgb(61, 199, 218) 79.29%);
+/*
+    border-bottom:1px solid black;
+    box-shadow: 1px 1px 4px black;  */
 }
 .navbar-brand{
     font-size: 2rem;
-    font-family: 'Courgette', cursive;
+    width: 80px;
+    height: 90px;
 }
 .nav-item{
     margin: 1rem;
@@ -29,19 +66,26 @@ a:link{
 }
 .nav-link{
     font-size: 1.1rem;
-    transition: all 0.5s ease;
+    transition: all 0.5s ease-in-out;
     border-radius: 10px;
-} 
+}
 .navbar-dark .navbar-nav .nav-link:hover{
-    color:#458ff6;
-    background-color: white; 
+    color: #458ff6;
+    background-color: white;
+}
+.myactive{
+    color: #458ff6;
+    background-color: white;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,1);
     padding:0.5rem 1rem;
 }
+.fa-home,.fa-user-alt ,.fa-laptop-code,.fa-address-card,.fa-file-pdf,.fa-chart-line,.fa-brain{
+    margin-right: 16px;
+}
 .content{
-    margin-top: 10rem;
+    padding-top: 16rem;
 }
 .name{
     letter-spacing: 0.8rem;
@@ -89,6 +133,224 @@ a:link{
 }
 
 /* About Page */
-#about-page{
-    background-color: turquoise;
+.about-row{
+    margin:auto 1rem;
+}
+
+.profile-image{  
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    box-shadow: 10px 15px 20px rgb(69 143 246 / 78%);
+}
+.avatar-container{
+    
+    padding: 5rem;
+}
+.profile-image:hover{
+    will-change: transform;
+    transform: perspective(500px) rotateX(5deg) rotateY(4deg) scale3d(1,1,1);
+}
+.intro-heading-container{
+        margin: 5rem auto;
+        font-size: 1.1rem;
+        color: #2d3038;
+        
+}
+.intro-heading-container h1{
+    font-size: 3rem;
+    color:#458ff6;
+    font-weight: 800;
+}
+.intro-heading-container h2{
+    color:#458ff6;
+    font-weight: 600;
+}
+.left-side{
+    font-weight: 600;
+    text-align: left;
+    color:#458ff6;
+}
+.intro-description{
+    display: inline-block;
+    width: 80%;
+    line-height: 2;
+    
+}
+.intro-about span{
+    color:#458ff6;
+    line-height: 2;
+    font-weight: 800;
+}
+
+/*Timeline Page*/
+#timeline-page{
+    
+    background: linear-gradient(39.97deg,#03d6f3 .79%,#458ff6 79.29%);
+}
+.heading{
+    font-weight: bolder;
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+.edu{
+    margin: 5rem 1rem;
+}
+.item{
+    transition: all 1s ease-in-out;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow:  20px 16px 9px rgba(95 96 55 / 61%);
+    border-left: 8px solid white;
+    margin: 2rem auto;
+    color: #A9F1DF;
+    background-color: #0A1931;
+    border-radius: 10px 3rem;
+    padding: 3rem;  
+}
+.item:hover{
+    background:linear-gradient(39.97deg,#03d6f3 .79%,#458ff6 79.29%);
+    border-left: none;
+    box-shadow: 20px 14px 9px 5px rgba(95 96 55 / 61%);
+}
+.edu-container{
+    padding: 2rem 5rem;
+}
+.item p{
+    font-style: italic;
+}
+.item h4{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Skill Page*/
+#skill-page{
+    color:black;
+    padding-top: 3rem;
+}
+#skill-page h1{
+    color: #458ff6;
+}
+.skill-row{
+    margin:6rem 1rem;
+}
+.skill-img{
+    width: 9rem;
+    height: 9rem;
+    transition: all 0.5s ease-in-out;
+}
+.skill-img:hover{
+    transform: scale(1.2);
+}
+.skill-name{
+    margin-top: 16px;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/* Work Page */
+#work-page{
+    text-align: center;
+    background: linear-gradient(39.97deg,#03d6f3 .79%,#458ff6 79.29%);
+}
+#work-page .heading h1{
+    padding-top: 2rem;
+    font-weight: 800;
+}
+#work-page .heading p{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.work-row{
+    color: #574b4a;
+    margin: 3rem 3rem 0;
+}
+.project-img{
+    height: 225px;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    transition: all 0.5s ease-in;
+}
+.project-card{
+    padding-bottom: 0.8rem;
+    height: 90%;
+    width: 93%;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 2rem;
+    backdrop-filter: blur(16px);
+    background: linear-gradient(299deg,#03d6f3 .79%,#ffffffbd 79.29%);
+    box-shadow: 10px 15px 20px rgb(0 0 0 / 30%);
+    
+    overflow: hidden;
+}
+.project-card:hover .project-img{
+    transform: scale(1.1,1.1);
+}
+.project-card p{
+    font-size: 1.1rem;
+}
+.project-card h3{
+    font-weight: bold;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.project-link{
+    font-size: 2rem;
+}
+.project-download{
+    font-size: 2.5rem;
+    transition: all 0.5s ease-in-out;
+    padding:0 10px;
+}
+.project-download:hover{
+    color:white;
+    transform: rotateY(180deg);
+}
+/*Contact-Page*/
+.contact-container{
+    color:black;
+    padding: 3rem 0;
+}
+.contact-row{
+    padding: 1rem 0;
+}
+.contact-icon{
+    background:linear-gradient(117deg,#03d6f3 .79%,#2ae5ff .59%,#458ff6 79.29%);
+    padding: 0 11px;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    margin: auto 12px;
+    color: white;
+    
+}
+.contact-icon:hover{
+    box-shadow: 0 10px 50px rgb(0 0 0 / 40%);
+    text-shadow: 0 0 15px #fff, 0 0 25px #fff, 0 0 30px #96e7f1, 0 0 40px #96e7f1, 0 0 50px #96e7f1, 0 0 60px #96e7f1;
+    color: white;
+}
+#footer-page{
+    position: relative;
+}
+footer{
+    position: absolute;
+    width: 100%;
+    padding: 2rem 0;
+    background: linear-gradient(to right, #2B32B2, #1488CC);
+}
+footer p{
+    font-family: sans-serif;
+    margin: 0;
+    font-size: 1.1rem;
+    letter-spacing: 5px;
 }
