@@ -6,4 +6,4 @@ A static Portfolio made using HTML, CSS, JS and Bootstrap.
 - Single Page Website
 
 # Screenshots
-![alt text](https://github.com/darshan-at/Darshan-portfolio/blob/main/images/profile2.jpeg)
+![alt text](https://github.com/darshan-at/Darshan-portfolio/blob/main/images/portfolio_img.png)
